@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Job Application Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <form id="jobApplicationForm" class="form">
+      <h1 class="form__title">Join Our Team</h1>
+      <div class="form__group">
+        <label for="name" class="form__label">Full Name:</label>
+        <input type="text" id="name" name="name" class="form__input" placeholder="Enter your full name">
+        <span id="nameError" class="error"></span>
+      </div>
+      <div class="form__group">
+        <label for="email" class="form__label">Email Address:</label>
+        <input type="email" id="email" name="email" class="form__input" placeholder="Enter your email address">
+        <span id="emailError" class="error"></span>
+      </div>
+      <div class="form__group">
+        <label for="phone" class="form__label">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" class="form__input" placeholder="Enter your phone number">
+        <span id="phoneError" class="error"></span>
+      </div>
+      <div class="form__group">
+        <label for="address" class="form__label">Home Address:</label>
+        <textarea id="address" name="address" class="form__input form__textarea" placeholder="Enter your home address"></textarea>
+        <span id="addressError" class="error"></span>
+      </div>
+      <div class="form__group">
+        <label for="resume" class="form__label">Upload Resume:</label>
+        <input type="file" id="resume" name="resume" class="form__file">
+        <span id="resumeError" class="error"></span>
+      </div>
+      <div class="form__group">
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" class="form__checkbox">
+        <label for="agreeTerms" class="form__label form__label--checkbox">I agree to the terms and conditions</label>
+      </div>
+      <button type="submit" id="submitBtn" class="btn btn--submit" disabled>Submit Application</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
